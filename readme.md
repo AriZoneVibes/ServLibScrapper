@@ -1,5 +1,8 @@
 > Download manuals into local and convert them to PDF
 
+Access the manuals from [ServLib](servlib.com).
+This for educational purposes on how to find and archive data. The code is quite explained, but you can direct any questions by submitting an issue or messaging me at [@AriZoneVibes](https://twitter.com/AriZoneVibes) :3
+
 Requirements
 ------------
 
