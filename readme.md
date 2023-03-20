@@ -22,30 +22,6 @@ pip install requests
 pip install fpdf
 ```
 
-Obtaining the link
-------------------
-
-As an example I'll be using the manual for KX-FT33LA Fax Machine, browsing through Firefox
-
-Access the manual, right-click over the page/image and click "Inspect Element".
-
-<p align="center">
-  <img src="img/1.png" width="90%">
-</p>
-
-On the developer console, go to the upper menus and press "Network". (It might ask you to reload)  
-Browse for the .PNG files on the list that shows up. Hover over it and should show a thumbnail. Confirm it's from the manual you are browsing and click.
-
-<p align="center">
-  <img src="img/2.png" width="90%">
-</p>
-
-Another view should open. Copy the link after GET and continue, we will now work on the script.
-
-<p align="center">
-  <img src="img/3.png" width="90%">
-</p>
-
 Script
 ------
 
@@ -53,11 +29,11 @@ Open `Scrapper.py` file in your favorite text editor. Modify the settings accord
 
 ```py
 #Settings
-Url = "https://servlib.com/disk/panasonic/fax/kx-ft33la/html/km79804202c3-1.png"
-#Url you got on the previous step, should look like: https://servlib.com/disk/panasonic/fax/kx-ft33la/html/km79804202c3-1.png
+Url = "https://servlib.com/lg/washing-machine/f1695rdh.html?start=0"
+#Url of one of the pages
 
-StartPage = 1 #First page to export
-EndPage = 127 #Last page to export
+StartPage = 0 #First page to export
+EndPage = 69 #Last page to export
 MakePdf = True #If will export the final file as PDF
 ```
 
